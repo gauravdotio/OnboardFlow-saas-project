@@ -37,7 +37,6 @@ export const metadata: Metadata = {
 };
 
 import Providers from "@/components/shared/Providers";
-import ThemePreviewer from "@/components/shared/ThemePreviewer";
 
 export default function RootLayout({
   children,
@@ -45,11 +44,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="indigo" className={`${inter.variable} scroll-smooth`}>
+    <html lang="en" data-theme="violet" className={`${inter.variable} scroll-smooth`}>
       <body className="min-h-screen flex flex-col bg-white text-slate-900 font-sans selection:bg-brand-500 selection:text-white">
         <Providers>
           {children}
-          <ThemePreviewer />
         </Providers>
       </body>
     </html>
